@@ -10,3 +10,10 @@ router.get("/notes", function(req, res){
 router.post("notes", function(req, res){
     action.addNote(req.body).then((note) => super.json(note))
 });
+
+// to delete notes
+router.delete("/notes/:id", function(req, res){
+    action.deleteNotes(req.params.id).then(() => res.json({ ok : true}))
+})
+
+module.exports = router 
