@@ -12,7 +12,14 @@ const PORT = process.env.PORT || 3001
 const apiRoute = require("./routes/apiroutes")
 const htmlRoute = require("./routes/htmlroutes")
 
-app.get("/", function(req, res){
-    res.json(path.join(__dirname, "public/index.html"))
-  })
+
+app.use(express.static("public"))
+app.use("/", htmlRoute)
+app.use("/api", apiRoute)
+app.listen(PORT, function(){
+    console.log("Listening on port " + PORT)
+})
+
+app.use(express.json())
+app.use(express.urlencoded({ extended : true }))
 
