@@ -7,7 +7,7 @@ router.get("/notes", function(req, res){
 })
 
 // to create new notes
-router.post("/api/notes", function(req, res){
+router.post("/notes/api", function(req, res){
     action.addNote(req.body).then((note) => res.json(note))
 });
 
