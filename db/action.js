@@ -32,7 +32,7 @@ class Store {
             throw("Please enter a note")
         }
         const newNote = {
-            text, id, title: uuidv1()
+            text, id, title: uuid()
         } 
         return this.getNotes()
         .then((notes) => [...notes, newNote]
