@@ -8,7 +8,7 @@ router.get("/notes", function(req, res){
 
 // to create new notes
 router.post("notes", function(req, res){
-    action.addNote(req.body).then((note) => super.json(note))
+    action.addNote(req.body).then((note) => res.json(note))
 });
 
 // to delete notes
