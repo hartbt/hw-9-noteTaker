@@ -15,7 +15,7 @@ const htmlRoute = require("./routes/htmlroutes")
 
 app.use(express.static("public"))
 app.use("/", htmlRoute)
-app.use("/api", apiRoute)
+app.use("/notes/api", apiRoute)
 app.listen(PORT, function(){
     console.log("Listening on port " + PORT)
 })
