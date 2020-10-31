@@ -25,10 +25,11 @@ JavaScript is utilized to comminute with the server and give or receive the note
 
 # **Problems Faced**
 
-
+I struggled with this assignment, mainly due to the fact that express was used. I was not able to get the save or the delete function to actually work. 
 
 # **Credits**
 
+I give credit to my classmates and my TA's for trying to to help me complete thie assignment. 
 
 # **License**
 
