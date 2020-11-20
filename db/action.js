@@ -42,7 +42,7 @@ class Store {
     }
     removeNote(id){
         return this.getNotes()
-        .then((notes) => notes.filter((note) => note.id !== id))
+        .then((remove) => remove.filter((removedNote) => removedNote.id !== id))
         .then((filteredNotes) => this.write(filteredNotes))
     }
 }
