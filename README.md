@@ -2,6 +2,8 @@
 
 This assignement serves as an application that allows the user to take notes, save those notes, and then view those notes at later instances. The user is able to view those notes at later instances because those notes are pushed up to an express server. The notes saved within the express sever are stored within HTML on the side of the webpage, and when they are clicked the full contents of the note are displayed. 
 
+<iframe src="https://drive.google.com/file/d/1MgHLm4_3m_icTvNXKzIu74CM9CxMgUs9/preview" width="640" height="480"></iframe>
+
 # **Installation**
 
 Run the following commands: 
@@ -21,11 +23,11 @@ Within this application, the technologies HTML, JavaScript, and the extension Ex
 
 The HTML is used as a template for the basis of the of the application, and the HTML is communicating with the JavaScript and providing a place for the JavaScript information to interact with. 
 
-JavaScript is utilized to comminute with the server and give or receive the notes. 
+JavaScript is utilized to communicate with the server and give or receive the notes. 
 
 # **Problems Faced**
 
-I struggled with this assignment, mainly due to the fact that express was used. I was not able to get the save or the delete function to actually work. 
+I struggled with this assignment, mainly due to the fact that express was used.
 
 # **Credits**
 
