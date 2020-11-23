@@ -1,6 +1,6 @@
 const fs = require("fs")
 const util = require("util")
-const uuid = require("uuid")
+const { v4: uuidv4 } = require("uuid")
 
 const writeFileAsync = util.promisify(fs.writeFile)
 const readFileAsync = util.promisify(fs.readFile)
@@ -25,6 +25,8 @@ class Store {
         })
     }
     addNote(note){
+
+        const newId = uuidv4()
         const {
             text, title
         } = note
@@ -32,7 +34,7 @@ class Store {
             throw("Please enter a note")
         }
         const newNote = {
-            text, id, title: uuid()
+            text, title, id: newId
         } 
         return this.getNotes()
         .then((notes) => [...notes, newNote]
